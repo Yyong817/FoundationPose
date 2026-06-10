@@ -1,0 +1,11 @@
+1.生成测试数据： 
+    在本地sam6d环境中运行data_process.py来生成数据  
+    运行data_process.py后会弹出一个框，按下m，画第一帧的mask，然后按下enter保存mask
+    保存完第一帧的mask之后，按下a，开始进入其余帧的保存，采集完足够数据之后，按下q,退出数据采集模式
+
+2.进入docker中运行fondation_pose
+    打开终端，进入/home/lab/Downloads/foundation_pose/FoundationPose/docker中
+    输入命令  sudo bash run_container.sh即可进入docker，出现(my) root@802-7:/home/lab/Downloads/foundation_pose/FoundationPose# 代表进入成功
+    然后运行python run_demo.py即可运行程序
+    注意：不要再在docker里面下东西，避免污染环境，如真要安装什么包可在本地sam6d中安装
+  
